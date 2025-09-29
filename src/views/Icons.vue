@@ -8,13 +8,8 @@
           <pre><code>npm install facilita-ds</code></pre>
         </li>
         <li>
-          <strong>Instale o plugin globalmente (opcional):</strong>
-          <pre><code>import Icons from 'facilita-ds/dist/icons'
-app.use(Icons)</code></pre>
-        </li>
-        <li>
-          <strong>Ou importe o ícone desejado:</strong>
-          <pre><code>import { uiIconBrush } from 'facilita-ds/dist/icons'</code></pre>
+          <strong>importe o ícone desejado:</strong>
+          <pre><code>import { uiIconBrush } from 'facilita-ds/icons'</code></pre>
         </li>
         <li>
           <strong>Use o componente no template:</strong>

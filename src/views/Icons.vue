@@ -34,6 +34,9 @@
 
 <script setup lang="ts">
 import { uiIconBrush, uiIconBusiness, uiIconCalculator, AllIcons } from 'facilita-ds/icons'
+defineOptions({
+    name: 'facilita-ds-icons'
+})
 </script>
 
 <style scoped>

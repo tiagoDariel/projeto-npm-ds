@@ -5,11 +5,11 @@ import Tabs from '@/views/Tabs.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    // {
-    //   path: '/',
-    //   name: 'home',
-    //   component: HomeView,
-    // },
+    {
+      path: '/',
+      name: 'home',
+      redirect: { name: 'list.icons' }
+    },
     {
       path: '/list-icons',
       name: 'list.icons',

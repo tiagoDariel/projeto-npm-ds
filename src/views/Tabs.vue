@@ -118,11 +118,11 @@ const pageActive = ref('view')
   font-family: 'Segoe UI', Arial, sans-serif;
 }
 .explication {
-  flex: 1;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 2px 8px #0001;
   padding: 2rem;
+  width: auto;
 }
 .title-example {
     display: flex;
@@ -136,14 +136,13 @@ const pageActive = ref('view')
 }
 
 .example {
-  flex: 1;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 2px 8px #0001;
   padding: 2rem;
   width: 100%;
   position: relative;
-  width: 700px;
+  width: 45vw;;
 }
 h1, h2 {
   color: #35495e;
@@ -163,7 +162,7 @@ pre {
 .code {
     background-color: #35495e;
     color: #fff;
-    max-width: 700px;
+    max-width: 60vw;;
     overflow: auto;
 }
 </style>

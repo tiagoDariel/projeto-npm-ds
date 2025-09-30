@@ -60,7 +60,7 @@ defineOptions({
   box-shadow: 0 2px 8px #0001;
   padding: 2rem;
   overflow: auto;
-  width: 70vw;
+  width: 60vw;
 }
 h1, h2 {
   color: #35495e;

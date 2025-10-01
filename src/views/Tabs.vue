@@ -116,6 +116,7 @@ const pageActive = ref('view')
   background: #f8fafc;
   min-height: 100vh;
   font-family: 'Segoe UI', Arial, sans-serif;
+  width: 100vw;
 }
 .explication {
   background: #fff;

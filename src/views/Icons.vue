@@ -4,10 +4,6 @@
       <h1>Como usar os ícones</h1>
       <ol>
         <li>
-          <strong>Instale o pacote:</strong>
-          <pre><code>npm install facilita-ds</code></pre>
-        </li>
-        <li>
           <strong>importe o ícone desejado:</strong>
           <pre><code>import { uiIconBrush } from 'facilita-ds/icons'</code></pre>
         </li>
@@ -47,6 +43,7 @@ defineOptions({
   background: #f8fafc;
   min-height: 100vh;
   font-family: 'Segoe UI', Arial, sans-serif;
+  width: 100vw;
 }
 .explicacao {
   background: #fff;

@@ -18,7 +18,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "facilita-ds": "^0.1.14",
+    "facilita-ds": "^0.1.23",
     "vue": "^3.5.22",
     "vue-router": "^4.5.1"
   },

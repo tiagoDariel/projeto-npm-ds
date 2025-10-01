@@ -75,6 +75,10 @@ import { ref } from 'vue'
 import { uiInput } from 'facilita-ds/components'
 import { uiIconBrush } from 'facilita-ds/icons'
 
+defineOptions({
+    name: 'facilita-ds-input'
+})
+
 const nome = ref('')
 const telefone = ref('')
 const erro = ref('')

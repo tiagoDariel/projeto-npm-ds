@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import listIcons from '../views/Icons.vue'
 import Tabs from '@/views/Tabs.vue'
 import Guide from '@/views/Guide.vue'
-import Button from '@/views/button.vue'
+import Button from '@/views/Button.vue'
 import Input from '@/views/Input.vue'
 
 const router = createRouter({

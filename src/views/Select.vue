@@ -393,7 +393,7 @@
             <p><strong>Selecionado:</strong> {{ userSearchClick }}</p>
 
             <div class="selects-demo-options"> 
-                <h3>Error</h3>
+                <h3>Com error</h3>
                 <button class="toggle-btn" @click="toggleCode('error')">
                     {{ showCode.error ? 'Ocultar' : 'Ver código' }}
                 </button>

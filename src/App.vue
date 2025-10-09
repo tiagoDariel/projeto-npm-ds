@@ -13,6 +13,7 @@ import { uiIconFacilita } from 'facilita-ds/icons';
       <RouterLink to="/button">button</RouterLink>
       <RouterLink to="/input">Input</RouterLink>
       <RouterLink to="/tabs">tabs</RouterLink>
+      <RouterLink to="/select">select</RouterLink>
 
       <div class="title">Templates</div>
       <RouterLink to="/guia">login</RouterLink>

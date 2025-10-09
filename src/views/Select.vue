@@ -391,6 +391,29 @@
             </div>
             <pre v-else class="code-block"><code class="language-html">{{ codeSamples.click }}</code></pre>
             <p><strong>Selecionado:</strong> {{ userSearchClick }}</p>
+
+            <div class="selects-demo-options"> 
+                <h3>Error</h3>
+                <button class="toggle-btn" @click="toggleCode('error')">
+                    {{ showCode.error ? 'Ocultar' : 'Ver código' }}
+                </button>
+            </div>
+        
+            <div class="item-select" v-if="!showCode.error">
+                <ui-select
+                    label="Usuários"
+                    v-model="userSearch"
+                    :options="[]"
+                    placeholder="Selecione uma cidade"
+                    return-label="label"
+                    return-value="value"
+                    searchable
+                    :error="true"
+                    error-message="Menssagem de erro exemplo"
+                    :is-auto-search="false"
+                />
+            </div>
+            <pre v-else class="code-block"><code class="language-html">{{ codeSamples.error }}</code></pre>
         </div>
     </section>
   </div>
@@ -419,7 +442,8 @@ const showCode = ref({
     searchMultipleKeep: false,
     customSearch: false,
     infinity: false,
-    click: false
+    click: false,
+    error: false,
 })
 
 // Função de alternância
@@ -1033,7 +1057,26 @@ click: `
             ];
         }, 1500);
     }
-`
+`,
+error: ` 
+<template>
+    <ui-select
+        label="Usuários"
+        v-model="userSearch"
+        placeholder="Selecione uma cidade"
+        searchable
+        error-message="Menssagem de erro exemplo"
+        :options="[]"
+        :error="true"
+        :is-auto-search="false"
+    />
+</template>
+<script setup lang="ts">
+    import { ref } from 'vue'
+    import UiSelect from 'facilita-ds/components/ui-select.vue'
+
+    const userSearch = ref<string[]>([])
+    `
 }
 
 onMounted(() => hljs.highlightAll())

@@ -1,14 +1,14 @@
 <template>
   <div class="docs-select">
     <section class="explanation">
-      <h1>Componente <code>ui-select</code></h1>
+      <h1>Componente <code style="font-weight: 600;">ui-select</code></h1>
       <p>
         O <strong>ui-select</strong> é um componente de seleção avançado, com suporte a múltipla seleção, busca, agrupamento, customização de opções, scroll infinito e muito mais.
       </p>
       <ol>
         <li>
           <strong>Importação:</strong>
-          <pre><code>import { uiSelect } from 'facilita-ds/components'</code></pre>
+          <pre><code style="font-weight: 600;">import { uiSelect } from 'facilita-ds/components'</code></pre>
         </li>
         <li>
           <strong>Uso básico:</strong>
@@ -24,35 +24,41 @@
         <li>
           <strong>Principais props:</strong>
           <ul>
-            <li><code>label</code>: Texto exibido acima do campo.</li>
-            <li><code>v-model</code>: Valor selecionado (array para múltiplo, valor único para simples).</li>
-            <li><code>options</code>: Lista de opções simples (<code>[{ label, value }]</code>).</li>
-            <li><code>optionWithTitle</code>: Lista de opções agrupadas (<code>{ Grupo: [{ label, value }] }</code>).</li>
-            <li><code>multiple</code>: Habilita seleção múltipla.</li>
-            <li><code>placeholder</code>: Placeholder do campo.</li>
-            <li><code>return-label</code>: Nome da chave exibida visualmente.</li>
-            <li><code>return-value</code>: Nome da chave usada como valor.</li>
-            <li><code>accordion</code>: Mostra grupos de opções como accordions.</li>
-            <li><code>searchable</code>: Habilita campo de busca.</li>
-            <li><code>loading</code>: Exibe ícone de carregando.</li>
-            <li><code>keep-selected</code>: Mantém seleção ao buscar novos dados (útil em busca remota).</li>
-            <li><code>notFound</code>: Texto exibido quando não há resultados.</li>
-            <li><code>error</code>: Estado de erro visual.</li>
-            <li><code>errorMessage</code>: Mensagem de erro.</li>
-            <li><code>required</code>: Campo obrigatório.</li>
+            <li><code style="font-weight: 600;">label</code>: Texto exibido acima do campo.</li>
+            <li><code style="font-weight: 600;">v-model</code>: Valor selecionado (array para múltiplo, valor único para simples).</li>
+            <li><code style="font-weight: 600;">options</code>: Lista de opções simples (<code style="font-weight: 600;">[{ label, value }]</code>).</li>
+            <li><code style="font-weight: 600;">optionWithTitle</code>: Lista de opções agrupadas (<code style="font-weight: 600;">{ Grupo: [{ label, value }] }</code>).</li>
+            <li><code style="font-weight: 600;">multiple</code>: Habilita seleção múltipla.</li>
+            <li><code style="font-weight: 600;">placeholder</code>: Placeholder do campo.</li>
+            <li><code style="font-weight: 600;">return-label</code>: Nome da chave exibida visualmente.</li>
+            <li><code style="font-weight: 600;">return-value</code>: Nome da chave usada como valor. 
+                <ul>
+                    <li>
+                        Obs.: Se o <span style="font-weight: 600;">return-value</span> não existir será retornado o objeto inteiro
+                    </li>
+                </ul>
+            </li>
+            <li><code style="font-weight: 600;">accordion</code>: Mostra grupos de opções como accordions.</li>
+            <li><code style="font-weight: 600;">searchable</code>: Habilita campo de busca.</li>
+            <li><code style="font-weight: 600;">loading</code>: Exibe ícone de carregando.</li>
+            <li><code style="font-weight: 600;">keep-selected</code>: Mantém seleção ao buscar novos dados (útil em busca remota).</li>
+            <li><code style="font-weight: 600;">notFound</code>: Texto exibido quando não há resultados.</li>
+            <li><code style="font-weight: 600;">error</code>: Estado de erro visual.</li>
+            <li><code style="font-weight: 600;">errorMessage</code>: Mensagem de erro.</li>
+            <li><code style="font-weight: 600;">required</code>: Campo obrigatório.</li>
           </ul>
         </li>
         <li>
           <strong>Eventos:</strong>
           <ul>
-            <li><code>@search:input</code>: Disparado ao digitar no campo de busca (útil para busca remota).</li>
-            <li><code>@options:load</code>: Disparado ao chegar no fim da lista (scroll infinito).</li>
+            <li><code style="font-weight: 600;">@search:input</code>: Disparado ao digitar no campo de busca (útil para busca remota).</li>
+            <li><code style="font-weight: 600;">@options:load</code>: Disparado ao chegar no fim da lista (scroll infinito).</li>
           </ul>
         </li>
         <li>
           <strong>Slots:</strong>
           <ul>
-            <li><code>default</code>: Customiza o conteúdo de cada opção (recebe <code>item</code>).</li>
+            <li><code style="font-weight: 600;">default</code>: Customiza o conteúdo de cada opção (recebe <code style="font-weight: 600;">item</code>).</li>
           </ul>
         </li>
       </ol>

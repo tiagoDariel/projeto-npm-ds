@@ -7,7 +7,6 @@
       </p>
       <ul>
         <li><code>@facilita-ds/template</code></li>
-        <li><code>@facilita-ds/icons</code></li>
         <li><code>@facilita-ds/components</code></li>
       </ul>
 
@@ -26,7 +25,6 @@
       <h2>Como usar em um projeto</h2>
       <pre><code lang="ts">
   import { UiTemplateNomeDoTemplate } from '@facilita-ds/template';
-  import { uiIconNomeDoIcone } from '@facilita-ds/icons';
   import { UiNomeDoComponent } from '@facilita-ds/components';
       </code></pre>
 

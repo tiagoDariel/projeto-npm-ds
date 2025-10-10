@@ -404,7 +404,7 @@
                     label="Usuários"
                     v-model="userSearch"
                     :options="[]"
-                    placeholder="Selecione uma cidade"
+                    placeholder="Selecione uma cidade"  
                     return-label="label"
                     return-value="value"
                     searchable
@@ -422,7 +422,7 @@
 <script setup lang="ts">
 import { ref, onMounted, nextTick } from 'vue'
 import { uiSelect } from 'facilita-ds/components'
-import { uiIconBrush } from 'facilita-ds/icons'
+// import { uiIconBrush } from 'facilita-ds/icons'
 import hljs from 'highlight.js'
 import 'highlight.js/styles/github-dark.css'
 

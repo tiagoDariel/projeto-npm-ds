@@ -73,7 +73,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { uiInput } from 'facilita-ds/components'
-import { uiIconBrush } from 'facilita-ds/icons'
+// import { uiIconBrush } from 'facilita-ds/icons'
 
 defineOptions({
     name: 'facilita-ds-input'

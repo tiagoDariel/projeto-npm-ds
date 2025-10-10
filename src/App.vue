@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { RouterView, RouterLink } from 'vue-router'
-import { uiIconFacilita } from 'facilita-ds/icons';
+  import { RouterView, RouterLink } from 'vue-router'
+  import { uiIcon } from 'facilita-ds/components'
 </script>
 
 <template>
   <div class="wrapper">
     <nav>
-      <h1><uiIconFacilita />Facilita Ds</h1>
+      <h1><ui-icon name="facilita" />Facilita Ds</h1>
       <RouterLink to="/guia">Instalação</RouterLink>
 
       <div class="title">Componentes</div>

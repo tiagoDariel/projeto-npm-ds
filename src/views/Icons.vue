@@ -5,31 +5,31 @@
       <ol>
         <li>
           <strong>importe o ícone desejado:</strong>
-          <pre><code>import { uiIconBrush } from 'facilita-ds/icons'</code></pre>
+          <pre><code>import { uiIcon } from 'facilita-ds/components'</code></pre>
         </li>
         <li>
           <strong>Use o componente no template:</strong>
-          <pre><code>&lt;ui-icon-brush :fill="'#42b983'" /&gt;</code></pre>
+          <pre><code>&lt;ui-icon name="brush" :fill="#42b983" /&gt;</code></pre>
         </li>
         <li>
           <strong>Personalize a cor usando a prop <code>fill</code>:</strong>
           <div class="icones-exemplo">
-            <uiIconBrush fill="#42b983" />
-            <uiIconBusiness fill="#35495e" />
-            <uiIconCalculator fill="orange" />
+            <ui-icon name="brush" fill="#42b983" />
+            <ui-icon name="business" fill="#35495e" />
+            <ui-icon name="calculator" fill="orange" />
           </div>
         </li>
       </ol>
     </section>
     <section class="todos-icones">
       <h2>Todos os ícones disponíveis</h2>
-      <allIcons />
+      <ui-icon name="allIcons" />
     </section>
   </div>
 </template>
 
 <script setup lang="ts">
-import { uiIconBrush, uiIconBusiness, uiIconCalculator, AllIcons } from 'facilita-ds/icons'
+import { uiIcon } from 'facilita-ds/components';
 defineOptions({
     name: 'facilita-ds-icons'
 })
